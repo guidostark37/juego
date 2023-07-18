@@ -1,7 +1,6 @@
 package com.guido.juego
 
 import android.content.Intent
-import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -22,13 +21,8 @@ class Splash : AppCompatActivity() {
     private fun cuentaatras() {
         Handler(Looper.myLooper()!!).postDelayed(5000){
             startActivity(Intent(this,MainActivity::class.java))
-
         }
-
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
 
-    }
 }
