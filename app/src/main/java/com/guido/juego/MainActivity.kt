@@ -331,6 +331,10 @@ class MainActivity : AppCompatActivity() {
         img_34.isEnabled=false
     }
 
-
+    override fun onRestart() {
+        super.onRestart()
+        mpfondo.pause()
+        mpfondo.release()
+    }
 
 }
